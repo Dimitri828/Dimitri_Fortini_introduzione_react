@@ -1,20 +1,19 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
+import Navbar from './components/Navbar'
+import Header from './components/Header'
+import List from './components/List'
+
+const NAMES=["Fabrizio","Nicola","Matteo","Valerio"]
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1 className='title'>REACT</h1>
-      <form action="" className='formName'>
-        <label htmlFor="userName" className='nameLabel'>Name</label>
-        <input type="text" id='userName' className='nameInput' />
-      </form>
-
+      <Navbar></Navbar>
+      <Header></Header>
+      <List  names={NAMES} />
     </>
   )
 }
