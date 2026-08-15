@@ -1,14 +1,7 @@
-export default function List({names}){
-return (
-    
-    <ul className="ul">
-        {names.map((name)=>{
-          return  (
-                <li  key={name}>{name}</li>
-            )
-        })}
-    </ul>
-    
-)
-    
+import Items from "./Items";
+
+
+export default function List({ children }) {
+  return <ul className="ul">{children}</ul>;
 }
+List.Items=Items;
