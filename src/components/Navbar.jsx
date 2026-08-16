@@ -1,9 +1,10 @@
+import { Link } from "react-router"
 export default function Navbar(){
     return(
     
     <nav className="navbar">
-    <a href="">Link 1</a>
-    <a href="">Link 2</a>
+    <Link to="/">Home</Link>
+    <Link to="/posts">Posts</Link>
     </nav>
     
     )
