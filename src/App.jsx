@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Main from "./components/Main";
+import LoadingData from "./components/LoadingData";
 
 function App() {
   const [names, setNames] = useState([
@@ -37,6 +38,7 @@ function App() {
           })}
         </Main.List>
       </Main>
+      <LoadingData></LoadingData>
     </>
   );
 }
